@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Nome] — Brand Guide</title>
+  <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- brand fonts -->
+  <style>
+    :root { /* tokens */ --bg: #0C0F14; --surface: #141A22; --text: #E9EDF5; --muted: #8A93A8; --accent: #___; --nav-width: 220px; }
+    /* tema claro: body.theme-light sobrescreve bg/surface/text/muted E accent —
+       accent escuro o bastante para passar check-contrast.mjs sobre fundo claro */
+    /* swatch: área de cor >= 96px de altura; token, hex e PAPEL abaixo dela */
+    /* See brand-guide-shell.md + .docs/repo-monitor/BRAND.html for full shell CSS */
+  </style>
+</head>
+<body>
+  <div class="guide-shell">
+    <nav class="guide-nav" aria-label="Navegação">
+      <div class="guide-nav-brand"><img src="assets/logos/logo-lockup.svg" alt="[Nome]" data-lockup></div>
+      <span class="nav-group-label">Estratégia</span>
+      <a href="#posicionamento" data-nav>Posicionamento</a>
+      <a href="#naming" data-nav>Naming</a>
+      <span class="nav-group-label">Identidade</span>
+      <a href="#cores" data-nav>Cores</a>
+      <a href="#tipografia" data-nav>Tipografia</a>
+      <span class="nav-group-label">Marca</span>
+      <a href="#logos" data-nav>Logos</a>
+      <a href="#voz" data-nav>Voz</a>
+      <span class="nav-group-label">Produto</span>
+      <a href="#preview" data-nav>Tela exemplo</a>
+    </nav>
+    <div class="guide-main">
+      <header class="hero"><!-- lockup[data-lockup], tese, jump-links, toggle de tema --></header>
+      <main>
+        <section id="posicionamento"><h2>Posicionamento</h2></section>
+        <section id="naming">
+          <h2>Naming</h2>
+          <!-- tabela 1: escada EXATA do nome (check-name.mjs) com titular/CNPJ e data -->
+          <!-- table 2: conflict — GitHub, npm, Instagram, trademark (WebSearch) -->
+        </section>
+        <section id="cores">
+          <h2>Cores</h2>
+          <!-- button.swatch[data-copy]: color >= 96px + token + hex + role; no <details> "semantic use" -->
+        </section>
+        <section id="tipografia"><h2>Tipografia</h2></section>
+        <section id="logos">
+          <h2>Logos</h2>
+          <!-- proof sheet: escada 128/48/24/16, 4 superfícies, mono, os 2 lockups,
+               clear space, 4 usos indevidos, alternativas com motivo.
+               SEM: rejeitadas, contraste, nota de lote, legenda "o wordmark diz" -->
+        </section>
+        <section id="voz">
+          <h2>Voz e tom</h2>
+          <!-- léxico (usamos/nunca) + 3 microcópias (vazio, erro, confirmação)
+               + par on/off com a MESMA intenção dos dois lados -->
+        </section>
+        <section id="preview">
+          <h2>Tela exemplo</h2>
+          <!-- <p class="muted"> com o trabalho central e o ARQUÉTIPO escolhido;
+               mock do arquétipo + 1 interação. Sem tabela de anotação. -->
+        </section>
+      </main>
+      <footer class="guide-footer">Sinais de disponibilidade · não substituem registrador nem INPI.</footer>
+    </div>
+  </div>
+  <div class="modal" id="logo-modal" hidden><!-- logo inspect --></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script>/* vanilla: scroll spy, copy, tabs, modals, toggle de tema (troca [data-lockup]) */</script>
+</body>
+</html>

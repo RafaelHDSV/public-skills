@@ -1,0 +1,55 @@
+# strategy.yaml — Brand Strategy Workshop (blocking)
+#
+# Copy to <logo-dir>/strategy.yaml BEFORE drawing anything.
+# PT: Copie para <logo-dir>/strategy.yaml ANTES de desenhar qualquer coisa.
+#
+# KEYS ARE ENGLISH AND NEVER TRANSLATED — verify-logo.mjs and the other scripts
+# read them by name. Prose is bilingual; values are yours, in any language.
+# PT: As CHAVES são inglês canônico e nunca se traduzem — os scripts as leem
+# pelo nome. A prosa é bilíngue; os valores são seus, em qualquer idioma.
+
+brand:
+  # Product name exactly as it will be set in the lockup.
+  # PT: Nome do produto exatamente como sairá no lockup.
+  name: ""
+  # What the product is, in three or four words.
+  # PT: O que o produto é, em três ou quatro palavras.
+  category: ""
+  # Who opens it, and when.
+  # PT: Quem abre, e quando.
+  audience: ""
+
+positioning:
+  # 1 = far left of the axis, 10 = far right.
+  # PT: 1 = extremo esquerdo do eixo, 10 = extremo direito.
+  practical_vs_innovative: 5
+  corporate_vs_friendly: 5
+  premium_vs_accessible: 5
+
+# Words the mark should communicate. Nouns beat adjectives.
+# PT: Palavras que a marca deve comunicar. Substantivo vale mais que adjetivo.
+brand_keywords:
+  - ""
+
+# Sector clichés this mark must not become. Extend per sector.
+# PT: Clichês do setor que esta marca não pode virar. Estenda por setor.
+avoid:
+  - brain
+  - rocket
+  - code brackets
+  - AI sparkles
+  - bar chart
+  - gear
+  - robot
+
+# Fill in AFTER a human approves the directions in logo-directions.md.
+# Example: [A, B, C] — omit any that were rejected.
+# PT: Preencher DEPOIS que um humano aprovar as direções em logo-directions.md.
+# Exemplo: [A, B, C] — omita as rejeitadas.
+approved_directions: []
+
+# Set by --no-stop: the agent chose the directions and a human still owes a review.
+# PT: Definido por --no-stop: o agente escolheu as direções e a revisão humana
+# continua devida.
+# auto_approved: true
+# human_review_owed: true
