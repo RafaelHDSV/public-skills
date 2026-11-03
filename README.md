@@ -1,36 +1,35 @@
-# public-skills
+<p align="center">
+  <strong>public-skills</strong>
+</p>
 
-Agent skills for logo work, branding, interface design, standups, environment ports, and pull-request review. Each folder is one skill: `SKILL.md` plus the references and scripts it needs.
+<p align="center">
+  <strong>Skills de agente prontas para instalar.</strong><br />
+  Logo, marca, UI, standup, cherry-pick de ambiente e review de PR — cada pasta é uma skill completa.
+</p>
 
-## Skills
+---
 
-**[logo](logo/SKILL.md)** — Builds a set of SVG marks from a short brief: several silhouette families, a favicon, and a wordmark set in real type. A small checker keeps the marks readable at favicon size. Node standard library only.
+## Por que existe
 
-**[branding](branding/SKILL.md)** — Turns a product idea into a brand guide: name, palette, type, voice, and a page that shows the marks in use. It does not draw the marks. Install `logo` with it.
+Repetir o mesmo briefing de logo, review ou standup em todo chat desperdiça contexto. Este repositório empacota skills públicas com `SKILL.md`, referências e scripts, instaláveis com um comando.
 
-**[frontend-design](frontend-design/SKILL.md)** — Designs screens and a local design note so the interface does not look like a default template. Use it for UI, not for naming or logos. This is not Anthropic's skill of the same name.
+## O que você ganha
 
-**[daily-standup](daily-standup/SKILL.md)** — Writes a standup: the date, two short bullets per person, and one link per card, under a character limit. The card list in `references/` starts empty so a team can fill its own.
+| Skill | Em uma frase |
+|---|---|
+| **logo** | Marcas SVG, favicon e wordmark a partir de um brief curto |
+| **branding** | Guia de nome, paleta, tipo e voz (sem desenhar marks) |
+| **frontend-design** | Telas e nota de design sem cara de template genérico |
+| **daily-standup** | Standup curto com data, bullets e links |
+| **cherry-pick-env-prs** | Porta PR mergeado para branches de ambiente |
+| **pr-review** | Review em markdown local; GitHub só com `--comment` pending |
 
-**[cherry-pick-env-prs](cherry-pick-env-prs/SKILL.md)** — Copies a merged pull request onto environment branches with `git cherry-pick -m 1`. Conflict fixes stay limited to what the port needs.
+## Para quem é
 
-**[pr-review](pr-review/SKILL.md)** — Writes a pull-request review as a local markdown file. It does not approve, request changes, or merge. A GitHub comment exists only as an unsubmitted pending review, and only when the prompt includes `--comment`.
+Quem usa agentes (Cursor, Claude, etc.) e quer skills reutilizáveis sem copiar pastas à mão.
 
-## Install
+## Começar
 
-```bash
-npx skills add RafaelHDSV/public-skills --skill logo
-npx skills add RafaelHDSV/public-skills --skill branding
-npx skills add RafaelHDSV/public-skills --skill frontend-design
-npx skills add RafaelHDSV/public-skills --skill daily-standup
-npx skills add RafaelHDSV/public-skills --skill cherry-pick-env-prs
-npx skills add RafaelHDSV/public-skills --skill pr-review
-```
+Comandos de install: [`docs/ambiente-e-operacao.md`](docs/ambiente-e-operacao.md). Contexto: [`docs/context.md`](docs/context.md).
 
-Install `logo` together with `branding`. If the GitHub repository name differs, replace `RafaelHDSV/public-skills` in every command.
-
-Without GitHub, point the agent at this folder, or copy a skill folder into `~/.cursor/skills/` or `~/.claude/skills/`.
-
-## License
-
-[MIT](LICENSE) — Rafael Vieira ([RafaelHDSV](https://github.com/RafaelHDSV)).
+Contribuição: [`CONTRIBUTING.md`](CONTRIBUTING.md) · conduta: [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) · mudanças: [`CHANGELOG.md`](CHANGELOG.md).
