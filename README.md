@@ -24,12 +24,28 @@ Repetir o mesmo briefing de logo, review ou standup em todo chat desperdiça con
 | **cherry-pick-env-prs** | Porta PR mergeado para branches de ambiente |
 | **pr-review** | Review em markdown local; GitHub só com `--comment` pending |
 
-## Para quem é
+## Como funciona
 
-Quem usa agentes (Cursor, Claude, etc.) e quer skills reutilizáveis sem copiar pastas à mão.
+```text
+npx skills add RafaelHDSV/public-skills --skill <nome>
+        ↓
+SKILL.md + references/ (+ scripts) no diretório de skills do agente
+        ↓
+Prompt cita a skill  →  agente segue o contrato
+```
+
+Instale `logo` junto com `branding`. Sem GitHub, aponte o agente a esta pasta ou copie para `~/.cursor/skills/` / `~/.claude/skills/`.
+
+## Posicionamento
+
+| public-skills é | public-skills não é |
+|---|---|
+| Pacote instalável de skills | Rules privadas do hub AGX |
+| Contratos explícitos (ex.: pr-review read-only) | Aprovar/mergear PRs |
+| Uma pasta = uma skill | Monólito de prompts |
 
 ## Começar
 
-Comandos de install: [`docs/ambiente-e-operacao.md`](docs/ambiente-e-operacao.md). Contexto: [`docs/context.md`](docs/context.md).
+Comandos de install: [`docs/ambiente-e-operacao.md`](docs/ambiente-e-operacao.md). Catálogo: [`docs/especificacao.md`](docs/especificacao.md). Contexto: [`docs/context.md`](docs/context.md).
 
 Contribuição: [`CONTRIBUTING.md`](CONTRIBUTING.md) · conduta: [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) · mudanças: [`CHANGELOG.md`](CHANGELOG.md).
