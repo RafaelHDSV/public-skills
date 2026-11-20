@@ -6,6 +6,13 @@
 
 Use `CHANGELOG.md` na raiz para releases Keep a Changelog. Este arquivo guarda o detalhe por data.
 
+## 2026-11-20
+
+### Skill ui-audit
+
+- Pasta `ui-audit/` com `SKILL.md`, `references/`, `scripts/auditar-telas.mjs` e testes.
+- Catálogo atualizado (README, especificacao, ambiente-e-operacao, context).
+
 ## 2026-11-03
 
 ### Living docs (board#7)

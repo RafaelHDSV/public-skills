@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fixture ui-audit</title>
+<style>
+  body { margin: 0; padding: 24px; font: 16px/1.5 system-ui, sans-serif; background: #ffffff; color: #111111; }
+  @media (prefers-color-scheme: dark) { body { background: #111111; color: #eeeeee; } }
+  .pequeno { font-size: 12px; }
+  .apagado { color: #9a9a9a; background: #aaaaaa; padding: 4px; }
+  .linha { display: flex; gap: 8px; margin: 16px 0; }
+  .linha select { height: 32px; font-size: 16px; }
+  .linha input { height: 40px; box-sizing: border-box; font-size: 16px; }
+  .largo { width: 1700px; height: 20px; background: #dddddd; }
+  .botao-mini { width: 30px; height: 30px; font-size: 16px; }
+  .gradiente { background: linear-gradient(90deg, #ff0000, #0000ff); color: #ffffff; padding: 8px; }
+  .esticada { width: 200px; height: 50px; }
+  /* regression: a label positioned outside a thin dark marker sits on the page background */
+  .trilha { position: relative; height: 24px; margin: 32px 0 8px; background: #eeeeee; }
+  .marcador { position: absolute; left: 50%; top: -8px; width: 2px; height: 40px; background: #1d2830; }
+  .marcador span { position: absolute; bottom: 100%; right: 4px; font-size: 14px; color: #1d2830; }
+  /* a nav that hides part of itself in an inner horizontal scroll */
+  .abas { display: flex; gap: 24px; overflow-x: auto; width: 240px; white-space: nowrap; }
+  /* a panel barely separated from the page (both themes) */
+  .painel { width: 300px; height: 100px; background: #f6f6f6; padding: 8px; }
+  @media (prefers-color-scheme: dark) { .painel { background: #161616; } }
+  .alvo-ok { width: 44px; height: 44px; font-size: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Título principal</h1>
+  <h3>Subtítulo que pula o h2</h3>
+  <p class="conforme">Texto conforme em 16 px e contraste alto.</p>
+  <p class="pequeno">Legenda pequena demais para leitura prolongada.</p>
+  <p class="apagado">Cinza sobre cinza com contraste ruim.</p>
+  <div class="linha">
+    <select aria-label="Administradora"><option>Todas</option></select>
+    <input type="search" placeholder="Buscar" aria-label="Buscar">
+  </div>
+  <button class="botao-mini" aria-label="Fechar">x</button>
+  <p class="gradiente">Texto sobre gradiente.</p>
+  <img class="esticada" alt="pixel esticado" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==">
+  <div class="trilha"><div class="marcador"><span class="rotulo-fora">pedido</span></div></div>
+  <nav class="abas"><a href="#a">Início</a><a href="#b">Perguntas</a><a href="#c">Simular</a><a href="#d">Regras</a><a href="#e">Campos</a></nav>
+  <div class="painel">Painel quase da cor da página.</div>
+  <button class="alvo-ok" aria-label="Exato">ok</button>
+  <div class="largo"></div>
+</main>
+</body>
+</html>

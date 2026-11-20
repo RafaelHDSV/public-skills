@@ -11,6 +11,7 @@
 | logo | Conjunto de SVGs + favicon + wordmark |
 | branding | Guia de marca (não desenha marks) |
 | frontend-design | Telas + nota de design local |
+| ui-audit | Relatório priorizado de achados UI/UX em `.reviews/` (read-only) |
 | daily-standup | Standup curto com links de cards |
 | cherry-pick-env-prs | Porta PR mergeado para branches de ambiente |
 | pr-review | Review em markdown local; GitHub só com `--comment` pending |
