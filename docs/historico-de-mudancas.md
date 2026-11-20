@@ -8,6 +8,11 @@ Use `CHANGELOG.md` na raiz para releases Keep a Changelog. Este arquivo guarda o
 
 ## 2026-11-20
 
+### Skill readme
+
+- Pasta `readme/` com `SKILL.md`, `references/modelo.*` e `scripts/capturar-telas.mjs`.
+- Catálogo atualizado (README, especificacao, ambiente-e-operacao, context).
+
 ### Skill ui-audit
 
 - Pasta `ui-audit/` com `SKILL.md`, `references/`, `scripts/auditar-telas.mjs` e testes.

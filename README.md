@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>Skills de agente prontas para instalar.</strong><br />
-  Logo, marca, UI, auditoria de interface, standup, cherry-pick de ambiente e review de PR — cada pasta é uma skill completa.
+  Logo, marca, README, UI, auditoria de interface, standup, cherry-pick de ambiente e review de PR — cada pasta é uma skill completa.
 </p>
 
 ---
@@ -20,6 +20,7 @@ Repetir o mesmo briefing de logo, review ou standup em todo chat desperdiça con
 | **logo** | Marcas SVG, favicon e wordmark a partir de um brief curto |
 | **branding** | Guia de nome, paleta, tipo e voz (sem desenhar marks) |
 | **frontend-design** | Telas e nota de design sem cara de template genérico |
+| **readme** | README.md + README.en.md vendáveis (lockup, hero, galeria, setup) |
 | **ui-audit** | Auditoria criteriosa de UI/UX (claro/escuro) → relatório em `.reviews/` |
 | **daily-standup** | Standup curto com data, bullets e links |
 | **cherry-pick-env-prs** | Porta PR mergeado para branches de ambiente |

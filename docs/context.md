@@ -8,7 +8,7 @@ Leia este arquivo no início de qualquer prompt. Detalhe técnico vive no docume
 
 ## Objetivo
 
-Pacote público de agent skills (logo, branding, frontend-design, ui-audit, daily-standup, cherry-pick-env-prs, pr-review) instalável via `npx skills add`.
+Pacote público de agent skills (logo, branding, frontend-design, readme, ui-audit, daily-standup, cherry-pick-env-prs, pr-review) instalável via `npx skills add`.
 
 ## Stack e operação
 

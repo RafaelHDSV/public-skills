@@ -9,5 +9,6 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ### Adicionado
 
+- Skill **readme**: README.md + README.en.md no padrão produto (lockup, hero, galeria, setup, script de captura).
 - Skill **ui-audit**: auditoria criteriosa de UI/UX (browser claro/escuro, medidas, relatório em `.reviews/`).
 - Living docs (hub `docs/context.md`), arquivos de comunidade e README no padrão board#7.
